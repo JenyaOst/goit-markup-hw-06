@@ -439,22 +439,34 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form action="">
-          <label for="">
-            Name
-            <input type="text" class="modal-input" name="input-name" />
-          </label>
-          <label for="">
-            Phone
-            <input type="text" class="modal-input" name="input-phone" />
-          </label>
-          <label for="">
-            Email
-          <input type="text" class="modal-input" name="input-email" />
-        </label>
-        <label for="">
-          Comments
-        <textarea name="" id="" class="">Text input</textarea>
-      </label>
+          <label for="input-name" class="label-text"> Name</label>
+          <input
+            type="text"
+            class="modal-input"
+            name="input-name"
+            id="input-name"
+          />
+          <label for="input-phone" class="label-text"> Phone</label>
+          <input
+            type="text"
+            class="modal-input"
+            name="input-phone"
+            id="input-phone"
+          />
+
+          <label for="input-email" class="label-text">Email</label>
+          <input
+            type="text"
+            class="modal-input"
+            name="input-email"
+            id="input-email"
+          />
+          <div class="modal-privacy">
+            <p class="modal-privacy-text">I accept the terms and conditions of the <a href=""><span class="modal-link"> Privacy Policy</span></a></p>
+          </div>
+          <label for="modal-textarea" class="label-text"> Comments </label>
+          <textarea name="" id="modal-textarea" class="modal-textarea">Text input</textarea>
+          <button type="submit" class="modal-button-bottom">Send</button>
         </form>
       </div>
     </div>
