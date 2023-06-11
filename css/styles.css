@@ -16,6 +16,7 @@ body {
   --overlay-text: #f4f4fd;
   --link-color: #4d5ae5;
   --checked:#404bbf;
+  --checked-fill: #f4f4fd; ;
 }
 .container {
   width: 1158px;
@@ -557,14 +558,10 @@ img {
   width: 264px;
   height: 40px;
   background-color: transparent;
-  line-height: 1.5;
-  padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #ffffff;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  padding-left: 16px;
   color: #ffffff;
 }
 .footer-input-btn {
@@ -604,12 +601,12 @@ img {
   margin-left: 16px;
   fill: #ffffff;
 }
-/* .footer-input::placeholder {
+.footer-input::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
-} */
+}
 .footer-input-container {
   width: 453px;
   height: 80px;
@@ -973,7 +970,7 @@ img {
 }
 .checkbox-input:checked + .check-text > .modal-privacy-text {
   background-color: var(--checked);
-  fill: #f4f4fd;
+  fill: var(--checked-fill);
   border: none;
 }
 .check-text {
