@@ -928,6 +928,7 @@ border: none;
 .checkbox-container {
   position: relative;
   margin-bottom: 20px;
+  margin-top: 16px;
 }
 .modal-privacy-text {
   width: 16px;
