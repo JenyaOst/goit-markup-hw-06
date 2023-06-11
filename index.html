@@ -466,7 +466,7 @@
                 type="text"
                 class="modal-input"
                 name="user-name"
-                id="input-name"
+                id="user-name"
               />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-Person"></use>
@@ -480,7 +480,7 @@
                 type="text"
                 class="modal-input"
                 name="user-phone"
-                id="input-phone"
+                id="user-phone"
               />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-Phone"></use>
@@ -502,35 +502,34 @@
             </div>
           </div>
           <div class="text-area-container">
-          <label for="user-comment" class="label-text"> Comments </label>
-          <textarea
-            name="textarea"
-            id="modal-textarea"
-            class="user-comment"
-            placeholder="Text imput"
-          ></textarea>
-        </div>
+            <label for="user-comment" class="label-text"> Comments </label>
+            <textarea
+              name="textarea"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Text imput"
+            ></textarea>
+          </div>
           <div class="checkbox-container">
             <input
               type="checkbox"
               name="modal-checkbox"
-              id="checkbox"
+              id="user-privacy"
               required
               class="checkbox-input vissually-hidden"
+              value="true"
             />
-            <label for="checkbox" class="check-text">
+            <label for="user-privacy" class="check-text">
               <span class="modal-privacy-text">
                 <svg class="privacy-icon" width="10" height="8">
                   <use href="./images/icons.svg#privacy-vector"></use>
                 </svg>
               </span>
-              <span class="privacy-text">
-                I accept the terms and conditions of the<a
-                  href=""
-                  class="modal-link"
-                  >Privacy Policy</a
-                >
-              </span>
+              I accept the terms and conditions of the<a
+                href=""
+                class="modal-link"
+                >Privacy Policy</a
+              >
             </label>
           </div>
 
