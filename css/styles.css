@@ -546,25 +546,25 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .footer-input {
   border: 1px solid #ffffff;
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   width: 264px;
   height: 40px;
   background-color: var(--first-title-color);
-  margin-right: 24px;
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
+  color: #ffffff;
 }
 .footer-input-btn {
   font-family: "Roboto" sans-serif;
   font-style: normal;
   font-weight: 500;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   border-radius: 4px;
@@ -591,10 +591,8 @@ border: none;
   border: none;
 }
 .footer-input-icon {
+  margin-left: 16px;
   fill: #ffffff;
-}
-.footer-btn-span {
-  margin-right: 16px;
 }
 .footer-input::placeholder {
   font-size: 12px;
@@ -606,8 +604,9 @@ border: none;
   width: 453px;
   height: 80px;
 }
-.footer-div {
+.footer-form {
   display: flex;
+  gap: 24px;
 }
 
 /* Portfolio */
@@ -763,7 +762,7 @@ border: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 72px 24px 16px 24px;
+  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
   transform: scale(0.25) rotate(180deg);
@@ -834,9 +833,14 @@ border: none;
   padding-left: 38px;
   outline: transparent;
   fill: #2e2f42;
+  background-color: transparent;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.label-text{
+  display: block;
+  margin-bottom: 4px;
 }
 .modal-input:focus {
   border-color: #4d5ae5;
@@ -855,6 +859,9 @@ border: none;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-area-container{
+  margin-bottom: 16px;
 }
 .modal-textarea {
   width: 100%;
@@ -928,7 +935,6 @@ border: none;
 .checkbox-container {
   position: relative;
   margin-bottom: 20px;
-  margin-top: 16px;
 }
 .modal-privacy-text {
   width: 16px;
