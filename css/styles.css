@@ -968,7 +968,7 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input:checked + .check-text > .modal-privacy-text {
+.user-privacy:checked + .check-text > .modal-privacy-text {
   background-color: var(--checked);
   fill: var(--checked-fill);
   border: none;
